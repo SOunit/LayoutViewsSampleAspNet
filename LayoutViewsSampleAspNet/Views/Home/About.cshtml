@@ -9,6 +9,12 @@
     ViewBag.Message = "Leading Company in The World";
 }
 
+@{ 
+    ViewBag.ListTitle = "Products";
+    ViewBag.Items = new List<string>() { "Mobiles", "Electronics", "Home Applications" };
+    Html.RenderPartial("ListPartialView");
+}
+
 @section SideBarOptions
 {
     <a href="#" class="list-group-item text-white"

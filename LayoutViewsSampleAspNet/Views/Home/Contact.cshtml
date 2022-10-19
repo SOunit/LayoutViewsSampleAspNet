@@ -9,6 +9,12 @@
     ViewBag.Message = "Contact our customer care representative!";
 }
 
+@{
+    ViewBag.ListTitle = "Contact Details";
+    ViewBag.Items = new List<string>() { "Coporate Office", "Support Team", "Marketing Team" };
+    Html.RenderPartial("ListPartialView");
+}
+
 @section SideBarOptions
 {
     <a href="#" class="list-group-item text-white"
